@@ -27,7 +27,7 @@ try {
                 'message': 'invalide credentials'
             })
         }
-        const accessToken = generateTokens(validateUser._id)
+        const accessToken = generateTokens(validateUser)
         console.log(accessToken)
         if(!accessToken){
                 res.status(400).json({
